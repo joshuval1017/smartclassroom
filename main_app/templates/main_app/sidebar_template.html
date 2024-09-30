@@ -121,6 +121,10 @@
                 <li class="nav-item {% if request.path == pdf_summarizer %}active{% endif %}">
                     <a class="nav-link" href="{% url 'pdf_summarizer' %}">PDF Summarizer</a>
                 </li>
+                <li class="nav-item {% if request.path == chatbot %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'chatbot' %}">Chatbot</a>
+                </li>
+                
                 <li class="nav-item {% if request.path == student_view_attendance %}active{% endif %}">
                     <a class="nav-link" href="{% url 'student_view_attendance' %}">View Attendance</a>
                 </li>
