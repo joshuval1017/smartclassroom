@@ -1,0 +1,12 @@
+{% extends 'main_app/base.html' %}
+{% block content %}
+<h2 style="font-size: 2rem; color: #333; text-align: center; margin-bottom: 20px;">My Notes</h2>
+<ul style="list-style-type: none; padding: 0;">
+  {% for note in notes %}
+    <li style="background-color: #f9f9f9; margin: 10px 0; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+      <a href="{{ note.pdf.url }}" style="text-decoration: none; color: #007bff; font-weight: bold; transition: color 0.3s ease;">{{ note.subject }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
